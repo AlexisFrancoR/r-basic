@@ -13,10 +13,11 @@
 2^-4
 
 2^(-4)
-
+#division con entero
 725%/%7
-
+#Residuo
 725%%7
+
 # D = d * q + r
 # r = D - d * q
 # q = D %/% d
@@ -31,63 +32,95 @@ pi
 
 pi^2
 
+#Infinito
 Inf
-
+#Menos Infinito
 -Inf
-
+#No disponible
 NA
-
+#Operaciones no disponibles
 NaN
 
 5/0
 
 0/0
 
-2^50# = 1.1259e+15 = 1125900000000000 
+# Notación cientifica
+# Se mueve el punto decimal 15 numeros a la derecha
+2^50 # = 1.1259e+15 = 1125900000000000
 
+# Se mueve el punto decimal 15 numeros a la izquierda
 2 ^(-15) # 3.051758e-05 = 0.00003051758
 
+# Vector
 c(2^30, 2^(-15), 1, 2, 3/2)
 
-
+# Raiz
 sqrt(25)
 
+# Constante de euler
 exp(1)
 
+# Logaritmo de PI
 log(pi)
 
+# Logaritmo de 32 en base 2
 log(32, 2)
 
+# Logaritmo de 32 en base a
+# una variable definida como 2
 log(32, base = 2)
 log(base=2, 32)
 
+# Valor absoluto
 abs(-pi)
 
+# Factorial, se define como 
+# numero factorial de un numero
+# entero positivo hasta llegar a 1
 factorial(7)
 
 factorial(4)
 
 factorial(0)
 
+# COEFICIENTE BINOMIAL
+# Se define el 
+# coeficiente binomial de n sobre m como
+"     n!
+------------
+   m!(n-m)!"
+#Si tuviera 5 platos  y me quisiera comer 3 de ellos
+# de cuantas formas lo puedo hacer
+# Numero de subjconjuntos que se puede sacar de un conjunto
 choose(5, 3)
-
 choose(3,5)
 
 log(4^6, 4)
+
+# Los argumentos dentro de una funcion, se separa
+# por comas
 
 6^log(4,6)
 
 choose(5,2)
 
+
+# FUNCIONES TRIGONOMETRICAS
+# Estan dadas en radianes
+# Utilizan los argumentos en radianes
 sin(60*pi/180)
 
-cos(60*pi/180)
+cos(60 * pi/180)
+
+cos(120 * pi/180)
+
 
 sinpi(1/2) # = sin (pi/2)
 
-tan(pi) # -1.224647e-16 ~ 0
+tan(pi) # -1.224647e-16 ~ (Tiende a...) 0
 
-tan(pi/2) # 1.633124e+16 ~ Inf
+tan(pi/2) # 1.633124e+16 ~  (Tiende a...) Inf
 
 asin(0.8660254) #arc sin en radianes
 
@@ -97,35 +130,60 @@ asin(5) #arc sin x in [-1,1]
 
 acos(-8)
 
-print(sqrt(2),10)
-round(sqrt(2), 3)
-floor(sqrt(2))
-ceiling(sqrt(2))
-trunc(sqrt(2))
 
-sqrt(2)^2-2
+# Numeros en coma flotante
+
+# Imprime las n cifras siginificativa del numero x
+print(sqrt(2),10)
+
+# Redondea a n cifras significativas un resultado o un vector numerico x
+round(sqrt(2), 3)
+
+# [x], parte entera por defecto de x, redondea
+floor(sqrt(2))
+floor(pi)
+
+# [x], parte entera por exceso de x
+ceiling(sqrt(2))
+ceiling(pi)
+
+# Parte entera de x, eliminando la parte decimal
+trunc(sqrt(2))
+trunc(pi)
+
+(sqrt(2)^2)-2
 
 round(sqrt(2), 4)^2
 
 2^50
+# MANTIZA, obtener los 15 numeros mas significativos
 print(2^50, 15)
+# MANTIZA, obtener los 2 numeros mas significativos
 print(2^50, 2)
+
 print(pi, 22)
 #3.141592653589793115998
 #3.141592653589793238462
 
 round(1.25,1)
 round(1.35,1)
+
+# Es lo mismo
 round(sqrt(2),0)
+# Que esto
 round(sqrt(2))
 
-round(digits = 5, sqrt(2))
+?round(digits = 5, sqrt(2))
+# Se puede cambiar el orden de los argumentos, cuando se hace
+# se tiene que especificar
 round(5, sqrt(2))
 
 
 floor(-3.45)
 ceiling(-3.45)
 trunc(-3.45)
+
+Video 23
 
 
 x = (pi^2)/2
